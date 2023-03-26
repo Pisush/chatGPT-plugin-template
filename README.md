@@ -1,5 +1,9 @@
 # chatGPT-plugin-template
-For Gophers
+For Gophers!
+
+
+-------
+
 
 Here are some motivational screenshots:
 
@@ -7,8 +11,17 @@ Here are some motivational screenshots:
 
 <img width="1286" alt="Screenshot 2023-03-26 at 20 34 21" src="https://user-images.githubusercontent.com/7592392/227796699-8253da12-4b73-4e32-b22e-fe5a3bd5d289.png">
 
+
+-------
+
+
 ## What are ChatGPT plugins?
-The full answer is available [here](https://openai.com/blog/chatgpt-plugins)
+In 2 sentences: It's a way to enable ChatGPT to use your app's API. You share the specs, and it can translate a query from the end user to an API call.
+The full answer is available [here](https://openai.com/blog/chatgpt-plugins). ATM it's in limited alpha.
+
+
+-------
+
 
 ## Steps for Building a ChatGPT Plugin Based on Your Go Web Server
 You need to add at least 2 files from root:
@@ -17,9 +30,13 @@ You need to add at least 2 files from root:
 As comments are not allowed in a JSON file, check out `ai-plugin_example.md` for some more details on structuring this file
 3. As a sanity check, double check the paths from file 1 match the endpoints from path 2, and that you changed all the ngrok URLs to your URLs.
 4. execute: `$ go run main.go`
-5. Add the plugin via the ChatGPT UI
+5. Add the plugin via the ChatGPT UI by going to the Plugin Store -> Install An Unverified Plugin, and insert the top website domain
 
-If you are running in localhost, use a tunneling tool like ngrok to expose the files. Change in `openapi.yaml` and in `.well-known/ai-plugin.json`. And your `main.go` can remain on localhost.
+### FYI
+- If you are running in localhost, use a tunneling tool like ngrok to expose the files. Change in `openapi.yaml` and in `.well-known/ai-plugin.json`. And your `main.go` can remain on localhost.
+- As long as the plugin is unverified, max 15 people can install the plugin
+
+-------
 
 
 ## Debug
