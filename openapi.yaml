@@ -4,10 +4,11 @@ info:
   description: Description what can the plugin do
   version: 'v1'
 servers:
-  - url: https://7e7e-87-154-223-246.eu.ngrok.io
+  - url: https://7e7e-87-154-223-246.eu.ngrok.io # change this
 paths:
   /hi:
-    get:
+    get: # max 200 characters for each API endpoint description/summary field and each API param description field in API specification
+
       operationId: getHiEndpoint # use a meaningful name and include prompt-related keyword
       summary: How to say hi in different lagnauges lilke thai, chinese, english, arabic, hebrew # include keywords for the prompt as much as possible
       responses:
