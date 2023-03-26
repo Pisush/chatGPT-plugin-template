@@ -7,6 +7,8 @@ Here are some motivational screenshots:
 
 <img width="1286" alt="Screenshot 2023-03-26 at 20 34 21" src="https://user-images.githubusercontent.com/7592392/227796699-8253da12-4b73-4e32-b22e-fe5a3bd5d289.png">
 
+## What are ChatGPT plugins?
+The full answer is available [here](https://openai.com/blog/chatgpt-plugins)
 
 ## Steps for Building a ChatGPT Plugin Based on Your Go Web Server
 You need to add at least 2 files from root:
