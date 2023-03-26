@@ -1,2 +1,2 @@
-# chatGPT-plugin-templaet
+# chatGPT-plugin-template
 For Gophers
