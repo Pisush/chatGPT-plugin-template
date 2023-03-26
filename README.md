@@ -1,7 +1,14 @@
 # chatGPT-plugin-template
 For Gophers
 
-## Steps for Building a ChatGPT Plugin
+Here are some motivational screenshots:
+
+<img width="685" alt="Screenshot 2023-03-26 at 20 35 16" src="https://user-images.githubusercontent.com/7592392/227796730-1bbaef6e-b8b7-487c-8b1b-6273e75e7af8.png">
+
+<img width="1286" alt="Screenshot 2023-03-26 at 20 34 21" src="https://user-images.githubusercontent.com/7592392/227796699-8253da12-4b73-4e32-b22e-fe5a3bd5d289.png">
+
+
+## Steps for Building a ChatGPT Plugin Based on Your Go Web Server
 You need to add at least 2 files from root:
 1. Add and edit the file `openapi.yaml`
 2. Add and edit the file `.well-known/ai-plugin.json` (you might need to sudo this)
@@ -35,3 +42,4 @@ You have successfully added the plugin but it shows an empty field.
 
 **Solution:**
 Get your hands dirty to make the prompt engineering easy: change the descriptions and use more keywords for the different actions, do this in the files: `openapi.yaml` and  `.well-known/ai-plugin.json`.
+
