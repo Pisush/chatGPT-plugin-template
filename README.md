@@ -43,3 +43,10 @@ You have successfully added the plugin but it shows an empty field.
 **Solution:**
 Get your hands dirty to make the prompt engineering easy: change the descriptions and use more keywords for the different actions, do this in the files: `openapi.yaml` and  `.well-known/ai-plugin.json`.
 
+-------
+
+**Problem:**
+The plugin was added successfully, but returns the error `ResponseTooLargeError`
+
+**Solution:**
+The response is limited at 100k characters. If your response is designed to be smaller, it can be that there's an error in the API and it's just returning the entire website. This is mostly common at private projects where security measurements are not in place.
