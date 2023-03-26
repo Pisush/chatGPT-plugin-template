@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: Plugin title
+  description: Description what can the plugin do
+  version: 'v1'
+servers:
+  - url: https://7e7e-87-154-223-246.eu.ngrok.io
+paths:
+  /hi:
+    get:
+      operationId: getHiEndpoint # use a meaningful name and include prompt-related keyword
+      summary: How to say hi in different lagnauges lilke thai, chinese, english, arabic, hebrew # include keywords for the prompt as much as possible
+      responses:
+        '200':
+          description: Successful action
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:  # json object schema here 
+                  message:
+                    type: string
+                    example: 'This is an example text'
+  /pi:
+    get:
+      operationId: getPiEndpoint # use a meaningful name and include prompt-related keyword
+      summary: Shows the first digits of the Pi constant # include keywords for the prompt as much as possible
+      responses:
+        '200':
+          description: Successful action
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:  # json object schema here 
+                  message:
+                    type: string
+                    example: 'This is another example text'

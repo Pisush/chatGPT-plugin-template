@@ -1,0 +1,50 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Fun facts",
+  "name_for_model": "Hi_and_pi",
+  "description_for_human": "Different fun facts, like how to say hi in different languages, or the first 20 digits of Pi",
+  "description_for_model": "Fun facts like how to say hi in different langauges: thai, english, chinese, hebrew and arabic; and the first 20 digits of Pi",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://7e7e-87-154-223-246.eu.ngrok.io/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://7e7e-87-154-223-246.eu.ngrok.io/image",
+  "contact_email": "hi@no-real-email-here.com",
+  "legal_info_url": "https://7e7e-87-154-223-246.eu.ngrok.io/legal",
+  "endpoints": [
+    {
+      "name": "getHi",
+      "description": "Endpoint for saying hi in different languages",
+      "url": "https://7e7e-87-154-223-246.eu.ngrok.io/hi",
+      "request_type": "GET",
+      "response_type": "JSON",
+      "response_format": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "name": "getPi",
+      "description": "Endpoint for the digits of the Pi",
+      "url": "https://7e7e-87-154-223-246.eu.ngrok.io/pi",
+      "request_type": "GET",
+      "response_type": "JSON",
+      "response_format": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}
